@@ -1,42 +1,44 @@
-<div >
+<div>
 
     <mat-spinner *ngIf="apiLength === 0" class="spinner"></mat-spinner>
 
 
     <div [ngClass]="apiLength !== 0 ? 'visible' : 'hidden'" class="dataTable">
 
-        <mat-form-field class="filter">
-            <mat-label>Filter</mat-label>
-            <input matInput (keyup)="applyFilter($event)" placeholder="Search here" #input>
-        </mat-form-field>
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Filter</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Search here" #input>
+            </mat-form-field>
 
 
-        <mat-paginator class="paginator" [length]="apiLength" [pageSize]="10"
-        [pageSizeOptions]="[5, 10, 15, 25, 50]"></mat-paginator>
-    
+            <mat-paginator [length]="apiLength" [pageSize]="10"
+                [pageSizeOptions]="[5, 10, 15, 25, 50]"></mat-paginator>
+
+        </div>
+
         <mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
-    
+
             <!-- Name Column -->
             <ng-container matColumnDef="name">
                 <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
             </ng-container>
-    
+
             <!-- Message Column -->
             <ng-container matColumnDef="message">
                 <mat-header-cell *matHeaderCellDef mat-sort-header> Message </mat-header-cell>
-                <mat-cell *matCellDef="let element" 
-                        [matTooltipDisabled]="!shouldTruncate(element.message)"
-                        matTooltip="{{element.message}}"> {{truncateText(element.message)}} </mat-cell>
+                <mat-cell *matCellDef="let element" [matTooltipDisabled]="!shouldTruncate(element.message)"
+                    matTooltip="{{element.message}}"> {{truncateText(element.message)}} </mat-cell>
             </ng-container>
-    
+
             <!-- Date Column -->
             <ng-container matColumnDef="date">
                 <mat-header-cell *matHeaderCellDef mat-sort-header> Date Received </mat-header-cell>
                 <mat-cell *matCellDef="let element"> {{displayDate(element.dateCompleted)}} </mat-cell>
             </ng-container>
 
-    
+
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
             <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
         </mat-table>

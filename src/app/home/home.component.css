@@ -7,12 +7,9 @@
     margin-top: 5%
 }
 
-.paginator{
-    float: right;
-}
-
-.filter {
-    display: inline-block;
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .visible{
