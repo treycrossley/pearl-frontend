@@ -27,6 +27,6 @@ export class ApiService {
   }
 
   public get(API_URL: string){
-    return this.httpClient.get(this.PROXY_URL + API_URL).pipe(catchError(this.handleError));
+    return this.httpClient.get(this.PROXY_URL+ API_URL).pipe(catchError(this.handleError));
   }
 }

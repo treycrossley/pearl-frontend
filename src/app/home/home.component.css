@@ -22,3 +22,13 @@
 .hidden{
     visibility: hidden;
 }
+
+.mat-column-name {
+    flex: 0 0 15%;
+}
+.mat-column-date {
+    flex: 0 0 15%;
+}
+.mat-column-message {
+    padding: 5px 2%;
+}
