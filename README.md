@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 
-# SWAPI table
-A table that gets data from the Star Wars API and presents it in a filtered/sortable/paginated table using Angular 9
+# pearl-frontend
+A table that gets data from Pearl's AWS API and presents it in a filtered/sortable/paginated table using Angular 9.
+Messages over 250 char are truncated and the full message is displayed as a tooltip.
+
+-----------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
@@ -28,6 +30,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# pearl-frontend
->>>>>>> ae4cfc77c500d87fd39c7f493dcf0abed850e68b
+
