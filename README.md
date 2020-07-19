@@ -3,6 +3,8 @@
 A table that gets data from Pearl's AWS API and presents it in a filtered/sortable/paginated table using Angular 9.
 Messages over 250 char are truncated and the full message is displayed as a tooltip.
 
+![Farmers Market Finder Demo](demo/PearlDemo.gif)
+
 -----------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
