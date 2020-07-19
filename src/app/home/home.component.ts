@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
   apiElems = []
   displayedColumns: string[] = ['name', 'message', 'date'];
   dataSource: MatTableDataSource<TableRow>;
-  API_URL = "http://x17hs8niwh.execute-api.us-east-1.amazonaws.com/dev/demo/get-seekers"
+  API_URL = "https://x17hs8niwh.execute-api.us-east-1.amazonaws.com/dev/demo/get-seekers"
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

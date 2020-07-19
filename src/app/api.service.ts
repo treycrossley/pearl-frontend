@@ -9,7 +9,7 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  private PROXY_URL = "http://cors-anywhere.herokuapp.com/";
+  private PROXY_URL = "https://cors-anywhere.herokuapp.com/";
 
   constructor(private httpClient: HttpClient) { }
 
