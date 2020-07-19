@@ -3,7 +3,11 @@
 A table that gets data from Pearl's AWS API and presents it in a filtered/sortable/paginated table using Angular 9.
 Messages over 250 char are truncated and the full message is displayed as a tooltip.
 
+https://pearl-table.herokuapp.com/
+
 ![Farmers Market Finder Demo](demo/PearlDemo.gif)
+
+
 
 -----------
 
