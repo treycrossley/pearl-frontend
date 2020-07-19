@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pearltable-5e0ad": {
+      "hosting": {
+        "pearl-app": [
+          "pearltable-5e0ad"
+        ]
+      }
+    }
+  }
+}
